@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>travel</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f6f9;
+    }
+    header {
+      background: #2c3e50;
+      color: white;
+      padding: 15px;
+      text-align: center;
+    }
+    .container {
+      display: flex;
+    }
+    .sidebar {
+      width: 220px;
+      background: #34495e;
+      color: white;
+      height: 100vh;
+      padding: 20px;
+    }
+    .sidebar a {
+      display: block;
+      color: white;
+      text-decoration: none;
+      margin: 10px 0;
+    }
+    .main {
+      flex: 1;
+      padding: 20px;
+    }
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Dashboard Travel & Pariwisata</h1>
+</header>
+
+<div class="container">
+  <div class="sidebar">
+    <h3>Menu</h3>
+    <a href="#">Dashboard</a>
+    <a href="#">Destinasi</a>
+    <a href="#">Paket Wisata</a>
+    <a href="#">Booking</a>
+    <a href="#">Kontak</a>
+  </div>
+
+  <div class="main">
+    <div class="grid">
+      <div class="card">
+        <h3>Total Destinasi</h3>
+        <p>120</p>
+      </div>
+      <div class="card">
+        <h3>Paket Wisata</h3>
+        <p>45</p>
+      </div>
+      <div class="card">
+        <h3>Booking Hari Ini</h3>
+        <p>18</p>
+      </div>
+      <div class="card">
+        <h3>Pengunjung</h3>
+        <p>1,250</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Destinasi Populer</h2>
+      <ul>
+        <li>Bali</li>
+        <li>Yogyakarta</li>
+        <li>Lombok</li>
+        <li>Raja Ampat</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Aktivitas Terbaru</h2>
+      <p>- Booking ke Bali oleh Andi</p>
+      <p>- Paket Lombok ditambahkan</p>
+      <p>- User baru mendaftar</p>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
